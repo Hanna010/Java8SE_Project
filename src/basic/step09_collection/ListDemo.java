@@ -31,8 +31,8 @@ public class ListDemo {
 		// 2. 크기 / 조회 / 포함 여부
 		System.out.println("크기      : " + names.size());       // 배열은 length, List 는 size()
 		System.out.println("첫 번째   : " + names.get(0));       // 배열은 [0], List 는 get(0)
-		System.out.println("포함 여부 : " + names.contains("김하늘"));
-		System.out.println("위치      : " + names.indexOf("김하늘"));
+		System.out.println("포함 여부 : " + names.contains("김하늘")); //T / F 
+		System.out.println("위치      : " + names.indexOf("김하늘")); //인덱스 위치 
 		System.out.println("비었는가  : " + names.isEmpty());
 
 		// 3. 수정과 삭제
