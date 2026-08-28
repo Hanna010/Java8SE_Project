@@ -7,7 +7,7 @@ public class Account {
 	private int balance;   //그래서 Getter와 Setter가 필요한 것이다. 
 	
 	//default construcotr 선언
-	public Account() {
+	public Account() { //아래처럼 생성자를 직접 하나라도 만들면 자바가 자동으로 만들어주지 않음. 스스로 만들어야함.
 		System.out.println("Account 기본생성자가 호출됨!");
 	}
 	
