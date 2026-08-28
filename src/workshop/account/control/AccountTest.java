@@ -7,9 +7,8 @@ public class AccountTest {
 	public static void main(String[] args) {
 		//try - catch 구문
 		try {
-			Account account = new Account();
-	
-			//setter 메서드를 호출하여 Account 변수의 값을 변경 요청
+			Account account = new Account(); //이렇게 매개변수없이 객체를 생성할 때 기본생성자가 있어야한다.
+			//1.setter 메서드를 호출하여 Account 변수의 값을 변경 요청
 			//고객번호 : "A1100", 계좌번호 : "221-22-3477", 잔액 : 100000
 			account.setCustId("A1100");
 			account.setAcctId("221-22-3477");
@@ -18,8 +17,10 @@ public class AccountTest {
 			System.out.println("고객번호=" + account.getCustId());
 			System.out.println("계좌번호=" + account.getAcctId());
 			System.out.println("잔액=" + account.getBalance());
-		
+			
+			//2.생성자를 이용하여 변수의 값을 넣는 방법. 
 			Account account2 = new Account("A1200","221-22-3478",20000);
+			
 			//getClass().getName + '@' + Interger.toHexString(hashcode())
 			//출금
 			account2.withdraw(500000);

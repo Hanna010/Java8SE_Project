@@ -2,9 +2,9 @@ package workshop.account.entity;
 import workshop.account.exception.InsufficientBalanceException;
 
 public class Account {
-	private String custId;
-	private String acctId;
-	private int balance;
+	private String custId; //private 사용했기에 다른 클래스에서 변수에 대해 직접 값을 읽거나 쓸 수 없다. 
+	private String acctId; //AccountTest.java에서 account.custId="C002"가 불가능하다. 왜냐면 private 이니까. 
+	private int balance;   //그래서 Getter와 Setter가 필요한 것이다. 
 	
 	//default construcotr 선언
 	public Account() {
@@ -14,9 +14,9 @@ public class Account {
 	//생성자 중복정의 (constructor overloading)
 	public Account(String custId, String acctId, int balance) {
 		System.out.print("오버로딩된 생성자 호출됨!");
-		this.custId = custId;
-		this.acctId = acctId;
-		this.balance = balance;
+		this.custId = custId; //고객번호
+		this.acctId = acctId; //계좌번호
+		this.balance = balance; //잔액
 	}
 	
 	//getter method 
@@ -25,7 +25,7 @@ public class Account {
 	}
 	//setter
 	public void setCustId(String custId) {
-		this.custId = custId; //기준의 번호를 바꾸겠다.
+		this.custId = custId; //기존 번호를 바꾸겠다.
 	}
 
 	public String getAcctId() {
