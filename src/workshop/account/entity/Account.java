@@ -47,7 +47,8 @@ public class Account {
 		this.balance += amount;
 	}
 	
-	//출금
+	//출금 
+	//토요일에 하기.
 		public void withdraw(int amount) 
 				throws InsufficientBalanceException {
 			if( amount > balance ) {
